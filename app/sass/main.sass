@@ -1,0 +1,67 @@
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	padding: 0
+	font-family: Geneva, Arial, Helvetica, sans-serif
+	
+
+$BlockDarkColor: #090c0e
+$headerfooterColor: #1f2225
+$BlockLightColor: #ebf2f6
+$BorderGreyColor: 1px solid #4c4e51
+$ElementsColor: #fb383c
+$textColor: #fff
+$textCaption: 13px "Product Sans", Helvetica, sans-serif
+
+.container
+	width: 1170px
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+/* grid */
+.row 
+	display: flex;
+	flex-flow: row wrap
+	margin: 0 -10px
+	margin-bottom: 10px
+.row:last-child 
+	margin-bottom: 0
+.wrap:before
+	display: table
+	content: " "
+.wrap:after
+	clear: both
+
+
+header
+	
+	background: $BlockDarkColor
+	color: $textColor
+	height: 50px
+
+	.logo
+		float: left
+		max-width: 200px
+		min-width: 50px
+		height: 100%
+		border-right: $BorderGreyColor
+	nav
+		float: right
+		width: auto
+		ul
+			li
+				display: inline
+				padding: 15px
+				text-transform: uppercase
+				font: $textCaption
+/********Description*****************/
+.description
+	.wrap
+		.caption
+			margin-right: 15px
+			border: $BorderGreyColor
+			height: 100px
+			background-color: black
